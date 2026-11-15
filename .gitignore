@@ -1,0 +1,38 @@
+# Робочі файли Visual Studio та особисті налаштування
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Результати збирання та проміжні файли
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+*.obj
+*.pch
+*.pdb
+*.ipch
+*.tlog
+*.log
+*.exe
+*.exe.metagen
+*.ilk
+*.idb
+*.res
+*.cache
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.opendb
+
+# Файли операційної системи
+Thumbs.db
+Desktop.ini
+.DS_Store
