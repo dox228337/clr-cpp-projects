@@ -9,6 +9,7 @@ int main(array<System::String^>^ args)
     Console::Write(L"Введіть кількість робітників M: ");
     int M = Convert::ToInt32(Console::ReadLine());
 
+    // Зберігаю дані одного працівника за однаковим індексом у всіх масивах.
     array<int>^ N = gcnew array<int>(M);
     array<double>^ UnitCost = gcnew array<double>(M);
     array<int>^ Quantity = gcnew array<int>(M);
@@ -30,6 +31,7 @@ int main(array<System::String^>^ args)
 
     for (int i = 0; i < M; i++)
     {
+        // Множу вартість одиниці виробу на кількість виготовлених виробів.
         Salary[i] = UnitCost[i] * Quantity[i];
         Console::WriteLine(L"{0,15} | {1,15:F2}", N[i], Salary[i]);
     }

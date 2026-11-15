@@ -25,10 +25,12 @@ int main(array<System::String^>^ args)
             matrix[i, j] = Convert::ToInt32(Console::ReadLine());
             sum += matrix[i, j];
         }
+        // Запам'ятовую суму елементів і початковий індекс кожного рядка.
         rowSums[i] = sum;
         indices[i] = i;
     }
 
+    // Упорядковую індекси за спаданням сум, не змінюючи саму матрицю.
     for (int i = 0; i < rows - 1; i++)
     {
         for (int j = i + 1; j < rows; j++)
@@ -45,6 +47,7 @@ int main(array<System::String^>^ args)
     Console::WriteLine(L"\nМатриця після перестановки рядків (за спаданням сум):");
     for (int i = 0; i < rows; i++)
     {
+        // Виводжу рядки за впорядкованим масивом індексів.
         int originalRow = indices[i];
         for (int j = 0; j < cols; j++)
         {

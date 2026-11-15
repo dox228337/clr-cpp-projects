@@ -3,6 +3,7 @@ using namespace System;
 
 int main(array<String^>^ args)
 {
+    // Використовую UTF-8 для українських повідомлень та введення даних.
     Console::OutputEncoding = Text::Encoding::UTF8;
     Console::InputEncoding = Text::Encoding::UTF8;
 
@@ -35,6 +36,7 @@ int main(array<String^>^ args)
             double W = 14.0;
             double C = 9.0;
 
+            // Обчислюю площу кімнати, а потім загальну вартість покриття.
             double area = L * W;
             double total = area * C;
 
@@ -97,6 +99,7 @@ int main(array<String^>^ args)
             String^ s1 = Console::ReadLine();
             String^ s2 = L"";
 
+            // Читаю символи з кінця, щоб отримати рядок у зворотному порядку.
             for (int i = s1->Length - 1; i >= 0; i--) {
                 s2 += s1[i];
             }
